@@ -1,0 +1,13 @@
+{
+  "name": "dally",
+  "owner": { "name": "Dally", "url": "https://dally.ai" },
+  "description": "Dally for Claude Code: creators' videos and posts, word for word, and your own with their numbers.",
+  "plugins": [
+    {
+      "name": "dally",
+      "source": "./plugins/dally",
+      "description": "Ask Claude what any creator actually said, and what is working in your own videos and posts.",
+      "homepage": "https://dally.ai"
+    }
+  ]
+}

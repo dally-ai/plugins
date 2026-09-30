@@ -1,0 +1,6 @@
+{
+  "dally": {
+    "type": "http",
+    "url": "https://dally.ai/mcp"
+  }
+}

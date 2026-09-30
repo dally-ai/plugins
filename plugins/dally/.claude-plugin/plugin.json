@@ -1,0 +1,10 @@
+{
+  "name": "dally",
+  "version": "1.0.0",
+  "description": "Ask Claude what any creator actually said, and what is working in your own videos and posts.",
+  "author": {
+    "name": "Dally",
+    "url": "https://dally.ai"
+  },
+  "homepage": "https://dally.ai"
+}
