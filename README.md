@@ -12,29 +12,21 @@ Inside Claude Code, paste:
 
 Press `y`, then Enter. Ask Claude anything that starts with "Using Dally,". The first time, Claude gives you a link to sign in to Dally; after you sign in, it answers in the same session.
 
-From a terminal instead:
+From a terminal instead, one line that adds Dally, signs you in and starts Claude Code already asking Dally to get you started:
 
 ```
-claude plugin marketplace add dally-ai/plugins && claude plugin install dally@dally
-```
-
-Without the plugin:
-
-```
-claude mcp add --transport http --scope user dally https://dally.ai/mcp && claude mcp login dally
+claude mcp add --transport http --scope user dally https://dally.ai/mcp && claude mcp login dally && claude "Using Dally, get me started"
 ```
 
 Already added Dally to Claude on the web or the desktop app? It is already in Claude Code under the same Claude login, and you can skip all of this.
 
 ## Install in Codex
 
-In a terminal:
+In a terminal, one line that adds Dally, signs you in and starts Codex already asking Dally to get you started:
 
 ```
-codex mcp add dally --url https://dally.ai/mcp
+codex mcp add dally --url https://dally.ai/mcp && codex "Using Dally, get me started"
 ```
-
-Adding it opens Dally's sign-in in your browser. Start a new Codex session afterwards.
 
 With the plugin instead:
 
@@ -44,7 +36,7 @@ codex plugin marketplace add dally-ai/plugins && codex plugin add dally@dally &&
 
 ## Your Dally account
 
-Dally's sign-in makes your account if you don't have one yet: sign up there with your email and a code, and your first question is answered. You don't need to visit dally.ai first.
+Dally's sign-in makes your account if you don't have one yet: sign up there with your email and a code. From then on Dally walks you through the rest in the terminal: connecting Instagram, your Profile Audit and what to ask next. You don't need to visit dally.ai.
 
 ## What opens in your browser
 
