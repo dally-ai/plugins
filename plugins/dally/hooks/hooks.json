@@ -1,0 +1,28 @@
+{
+  "description": "Opens the canvas Dally drew in your browser when the answer finishes, since a terminal can't show it.",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "mcp__.*__dally_show",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/open-canvas.sh\" remember",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/open-canvas.sh\" open",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

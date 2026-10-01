@@ -1,7 +1,7 @@
 {
   "name": "dally",
   "owner": { "name": "Dally", "url": "https://dally.ai" },
-  "description": "Dally for Claude Code: creators' videos and posts, word for word, and your own with their numbers.",
+  "description": "Dally for Claude Code and Codex: creators' videos and posts, word for word, and your own with their numbers.",
   "plugins": [
     {
       "name": "dally",
